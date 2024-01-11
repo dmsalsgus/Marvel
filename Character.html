@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>캐릭터소개</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        img {
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+        }
+        .menu img {
+            border-radius :100px;
+        }
+        .menu img:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+            transition: transform.25s;
+        }
+        #target {
+            color: black;
+            font: italic bold monospace,Sans-sSerif;
+            position: fixed;
+            width: 180px;
+            height: 390px;
+            float: left;
+            border: 3px solid red;
+            background-color: dimgrey;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 30px;
+            overflow-y: auto; /* 스크롤 추가 */
+        }
+        #target img {
+            width: 109px;
+            height: 110px;
+        }
+        #target img:hover {
+            cursor: pointer;
+        }
+        figure {
+            margin: 0px 30px 0px 250px;
+        }
+        #poster img {
+            cursor: pointer;
+            width: 150px;
+            height: 200px;
+        }
+        #poster img:hover {
+            opacity: 0.7;
+        }
+        article {
+            position: absolute;
+            right: 6%;
+            top:49%;
+        }
+    </style>
+    <script>
+        function MusicControl() {
+            var myAudio = document.getElementById("myAudio");
+            var myImg = document.getElementById("musicimg");
+            if (myAudio.paused) {
+                myAudio.play();
+                myImg.src = "./정은's 웹프/img/playing.gif";
+            } else {
+                myAudio.pause();
+                myImg.src = "./정은's 웹프/img/mute.png";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <a href="./intro.html"><img height="30" src="./정은's 웹프/img/회사 로고.png" /></a>
+        <div class="menu"  style="text-align: center;">
+            <a href="./Company.html"><img src="./정은's 웹프/img/헐크.jpg" height="250" width="200" alt="헐크 사진" /></td></a>&nbsp;&nbsp;
+            <a href="./Original.html"><img src="./정은's 웹프/img/캡틴아메리카.png" height="250" width="200" alt="캡틴아메리카 사진" /></td></a>&nbsp;&nbsp;&nbsp;
+            <a href="./Character.html"><img src="./정은's 웹프/img/아이언맨.jpg" height="250" width="200" alt="아이언맨 사진" /></td></a>&nbsp;&nbsp;
+            <a href="./Moving picture.html"><img src="./정은's 웹프/img/토르.jpg" height="250" width="200" alt="토르 사진" /></td></a>&nbsp;&nbsp;
+            <a href="./Comment.html"> <img src="./정은's 웹프/img/블랙위도우.jpg" height="250" width="200" alt="블랙위도우 사진" /></td></a>&nbsp;&nbsp;
+        </div>
+    </header>
+    <nav>
+        <br />
+        <div id="target"><span style="font-weight:bold;color:yellow;font-size:20px">GOODS</span><br />
+            <a href="https://item.gmarket.co.kr/Item?goodscode=3309078614&GoodsSale=Y&jaehuid=200013954&srsltid=AfmBOorVb5fKDUvne-RN3VxqUDFKXnbcpFGpeiIEUrzDny2jPX2hoOZuASU" target="_blank"><img src="./정은's 웹프/img/방패.png" /></a><br />
+            <a href="https://ko.aliexpress.com/item/1005004522527427.html?src=google&aff_fcid=049c5355a2934c189eec3935ca417d0a-1704875501497-09097-UneMJZVf&aff_fsk=UneMJZVf&aff_platform=aaf&sk=UneMJZVf&aff_trace_key=049c5355a2934c189eec3935ca417d0a-1704875501497-09097-UneMJZVf&terminal_id=982424f903544d39983b9cfc33bc3658&afSmartRedirect=y" target="_blank"><img src="./정은's 웹프/img/슈트.jpg" /></a><br />
+            <a href="https://www.coupang.com/vp/products/7799770758?itemId=21121554703&vendorItemId=88183351210&src=1042503&spec=10304982&addtag=400&ctag=7799770758&lptag=10304982I21121554703&itime=20240110173218&pageType=PRODUCT&pageValue=7799770758&wPcid=17048755384239490861060&wRef=www.google.com&wTime=20240110173218&redirect=landing&gclid=&mcid=1619983a0367476897472fced212d2c3&campaignid=&adgroupid=&isAddedCart=" target="_blank"><img src="./정은's 웹프/img/망치.jpg" /></a><br />
+            <!-- <a href="https://item.gmarket.co.kr/Item?goodscode=2897034780&GoodsSale=Y&jaehuid=200013954&srsltid=AfmBOopNJTbbfyMCbIU9p_St4QVLO-Nw4X3hZib-9vYoS5ypLdOcUel4Mfs" target="_blank"><img src="./정은's 웹프/img/목걸이.jpg" /></a> -->
+        </div>
+    </nav>
+    <figure id="poster">
+        <p>
+            <div><span style="font-size:60px; font:bold; font-family:fantasy; color:white">▷Character◁</span></div><br />
+            <a href="./정은's 웹프/캐릭터/아이언맨1/1.html" target="side">
+                <img src="./정은's 웹프/포스터/아이언맨1.png" />&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a href="./정은's 웹프/캐릭터/아이언맨2/2.html" target="side">
+                <img src="./정은's 웹프/포스터/아이언맨2.png" />&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a href="./정은's 웹프/캐릭터/토르 천둥의 신/3.html" target="side">
+                <img src="./정은's 웹프/포스터/토르 천둥의 신.png" />&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a href="./정은's 웹프/캐릭터/퍼스트어벤져/4.html" target="side">
+                <img src="./정은's 웹프/포스터/퍼스트어벤져.png" /><br /><br /><br /><br /></a>
+
+            <a href="./정은's 웹프/캐릭터/어벤져스/5.html" target="side">
+                <img src="./정은's 웹프/포스터/어벤져스.png" />&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a href="./정은's 웹프/캐릭터/아이언맨3/6.html" target="side">
+                <img src="./정은's 웹프/포스터/아이언맨3.png" />&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a href="./정은's 웹프/캐릭터/토르 다크월드/7.html" target="side">
+                <img src="./정은's 웹프/포스터/토르 다크월드.png" />&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a href="./정은's 웹프/캐릭터/캡틴아메리카 윈터솔져/8.html" target="side">
+                <img src="./정은's 웹프/포스터/캡틴아메리카 윈터솔져.png" /><br /><br /><br /><br /></a>
+
+            <a href="./정은's 웹프/캐릭터/어벤져스 에이지오브울트론/9.html" target="side">
+                <img src="./정은's 웹프/포스터/어벤져스 에이지오브울트론.png" />&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a href="./정은's 웹프/캐릭터/캡틴아메리카 시빌워/10.html" target="side">
+                <img src="./정은's 웹프/포스터/캡틴아메리카 시빌워.png" />&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a href="./정은's 웹프/캐릭터/스파이더맨 홈커밍/11.html" target="side">
+                <img src="./정은's 웹프/포스터/스파이더맨 홈커밍.png" />&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a href="./정은's 웹프/캐릭터/토르 라그나로크/12.html" target="side">
+                <img src="./정은's 웹프/포스터/토르 라그나로크.jpg" /><br /><br /><br /><br /></a>
+</p>
+    </figure> 
+    <article>
+        <iframe name="side" width="620" height="700" frameborder="0" scrolling="yes"></iframe>
+    </article>
+    
+</body>
+</html>
