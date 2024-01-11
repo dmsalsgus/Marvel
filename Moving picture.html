@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>동영상</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        img {
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+        }
+        .menu img {
+            border-radius: 100px;
+        }
+        .menu img:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+            transition: transform.25s;
+        }
+        #target {
+            color: black;
+            font: italic bold monospace,Sans-sSerif;
+            position: fixed;
+            width: 180px;
+            height: 390px;
+            float: left;
+            border: 3px solid red;
+            background-color: dimgrey;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 30px;
+            overflow-y: auto; /* 스크롤 추가 */
+        }
+        #target img {
+            width: 109px;
+            height: 110px;
+        }
+        #target img:hover {
+            cursor: pointer;
+        }
+        section {
+            margin: 0px 30px 0px 250px;
+        }
+        #pre{
+            font-size:50px;
+            font:bold;
+            font-family:fantasy;
+            color:cornflowerblue;
+            text-align:center;
+        }
+        #pre video {
+            width :450; 
+            height :570;
+            border: 2px solid white;
+        }
+        #famous {
+            font-size: 50px;
+            font:bold;
+            color: cornflowerblue;
+            text-align: center;
+            font-family: fantasy;
+        }
+            #famous video {
+                width: 300;
+                height: 400;
+                border: 2px solid white;
+            }
+
+            summary {
+        width: 405px;
+        display: inline;
+        text-align: center;
+        color: darkgray;
+        transition: color 0.25s; /* 부드러운 색상 전환을 위한 트랜지션 효과 추가 */
+    }
+
+    summary:hover {
+        color: rgb(11, 71, 131); 
+        cursor: pointer;
+    }
+
+    video {
+        width: 600px;
+        height: auto;
+    }
+    </style>
+    <script>
+        function MusicControl() {
+            var myAudio = document.getElementById("myAudio");
+            var myImg = document.getElementById("musicimg");
+            if (myAudio.paused) {
+                myAudio.play();
+                myImg.src = "./정은's 웹프/img/playing.gif";
+            } else {
+                myAudio.pause();
+                myImg.src = "./정은's 웹프/img/mute.png";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <a href="./intro.html"><img height="30" src="./정은's 웹프/img/회사 로고.png" /></a>
+        <div class="menu" style="text-align: center;">
+            <a href="./Company.html"><img src="./정은's 웹프/img/헐크.jpg" height="250" width="200" alt="헐크 사진" /></td></a>&nbsp;&nbsp;
+            <a href="./Original.html"><img src="./정은's 웹프/img/캡틴아메리카.png" height="250" width="200" alt="캡틴아메리카 사진" /></td></a>&nbsp;&nbsp;&nbsp;
+            <a href="./Character.html"><img src="./정은's 웹프/img/아이언맨.jpg" height="250" width="200" alt="아이언맨 사진" /></td></a>&nbsp;&nbsp;
+            <a href="./Moving picture.html"><img src="./정은's 웹프/img/토르.jpg" height="250" width="200" alt="토르 사진" /></td></a>&nbsp;&nbsp;
+            <a href="./Comment.html"> <img src="./정은's 웹프/img/블랙위도우.jpg" height="250" width="200" alt="블랙위도우 사진" /></td></a>&nbsp;&nbsp;
+        </div>
+    </header>
+    <nav>
+        <br />
+        <div id="target">
+            <span style="font-weight:bold;color:yellow;font-size:20px">GOODS</span><br />
+            <a href="http://storefarm.naver.com/wbox/products/567107688?NaPm=ct%3Djaqsbamo%7Cci%3D940ac9e9f2fd41d1d2a354ac251af185dc9ba9a8%7Ctr%3Dslsl%7Csn%3D418814%7Cic%3D%7Chk%3Dc51ff7d189c7987de60ecec860e73ad20b5f4e02"><img src="./정은's 웹프/img/방패.png" /></a><br />
+            <a href="https://ssadajapan.com/mall/view/goodsNo/2133965?NaPm=ct%3Djaqskapc%7Cci%3D5402128b4b83f76a298e204f8feb898e6f57def3%7Ctr%3Dslsl%7Csn%3D310768%7Chk%3Dae3e10a11236d25b1bc14f8f797f2646d421dca5"><img src="./정은's 웹프/img/슈트.jpg" /></a><br />
+            <a href="http://storefarm.naver.com/grrs/products/2049721707?NaPm=ct%3Djaqsmheo%7Cci%3D0a5c653470f07e9b68c4368ef77c0646376a2870%7Ctr%3Dslsl%7Csn%3D307110%7Cic%3D%7Chk%3D49a2443b6c93449cada1ae189a9754434cb60362"><img src="./정은's 웹프/img/망치.jpg" /></a><br />
+            <!-- <a href="http://storefarm.naver.com/saege/products/2170389025?NaPm=ct%3Djaqsoa80%7Cci%3Df076c1a823b06a56bb6e0c48c5cb86f33e001f30%7Ctr%3Dslsl%7Csn%3D471199%7Cic%3D%7Chk%3D11b85e4f6837d505aca3ccaabbbd1a0502a70f6a"><img src="./정은's 웹프/img/목걸이.jpg" /></a> -->
+        </div>
+    </nav>
+    <section><br />
+        <div id="pre">
+            ★신작예고편★<br /><br />
+            <video src="./정은's 웹프/동영상/어벤져스_인피니티 워.mp4" controls="controls" autoplay="autoplay"></video>
+        </div><br />
+        <div id="famous">
+           ★영화명장면 클립★<br /><br />
+            <details style= "font-size:30px; font-family:monospace;">
+                <summary>아이언맨1</summary>
+                <p><video src="./정은's 웹프/동영상/아이언맨1.mp4" controls="controls" ></video></p>
+            </details>
+            <details style="font-size:30px; font-family:monospace;">
+                <summary>아이언맨2</summary>
+                <p><video src="./정은's 웹프/동영상/아이언맨2.mp4" controls="controls" ></video></p>
+            </details>
+            <details style="font-size:30px; font-family:monospace;">
+                <summary>토르 천둥의 신</summary>
+                <p><video src="./정은's 웹프/동영상/토르 천둥의 신.mp4" controls="controls"></video></p>
+            </details>
+            <details style="font-size:30px; font-family:monospace;">
+                <summary>퍼스트어벤져</summary>
+                <p><video src="./정은's 웹프/동영상/퍼스트어벤져.mp4" controls="controls"></video></p>
+            </details>
+            <details style="font-size:30px; font-family:monospace;">
+                <summary>어벤져스</summary>
+                <p><video src="./정은's 웹프/동영상/어벤져스.mp4" controls="controls"></video></p>
+            </details>
+            <details style="font-size:30px; font-family:monospace;">
+                <summary>아이언맨3</summary>
+                <p><video src="./정은's 웹프/동영상/아이언맨3.mp4" controls="controls"></video></p>
+            </details>
+            <details style="font-size:30px; font-family:monospace;">
+                <summary>토르 다크월드</summary>
+                <p><video src="./정은's 웹프/동영상/토르 다크월드.mp4" controls="controls"></video></p>
+            </details>
+            <details style="font-size:30px; font-family:monospace;">
+                <summary>캡틴 아메리카 윈터솔져</summary>
+                <p><video src="./정은's 웹프/동영상/캡틴아메리카 윈터솔져.mp4" controls="controls"></video></p>
+            </details>
+            <details style="font-size:30px; font-family:monospace;">
+                <summary>어벤져스 에이지오브울트론</summary>
+                <p><video src="./정은's 웹프/동영상/어벤져스 에이지오브울트론.mp4" controls="controls"></video></p>
+            </details>
+            <details style="font-size:30px; font-family:monospace;">
+                <summary>캡틴아메리카 시빌워</summary>
+                <p><video src="./정은's 웹프/동영상/캡틴아메리카 시빌워.mp4" controls="controls"></video></p>
+            </details>
+            <details style="font-size:30px; font-family:monospace;">
+                <summary>스파이더맨 홈커밍</summary>
+                <p><video src="./정은's 웹프/동영상/스파이더맨 홈커밍.mp4" controls="controls"></video></p>
+            </details>
+            <details style="font-size:30px; font-family:monospace;">
+                <summary>토르 라그나로크</summary>
+                <p><video src="./정은's 웹프/동영상/토르 라그나로크.mp4" controls="controls"></video></p>
+            </details><br />
+        </div>
+    </section>   
+</body>
+</html>

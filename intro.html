@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>main</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        .body img{
+            margin:0px;
+            padding:0px;
+            overflow : hidden;
+        }
+        img:hover{
+            cursor:pointer;
+            transform: scale(1.1);
+            transition:transform.25s;
+        } 
+        #title{
+            color:red;
+            text-shadow:13px 12px 7px white;
+            font:italic bold 130px fantasy, Sans-Serif;
+        }
+
+    </style>
+    <script>
+        function MusicControl() {
+            var myAudio = document.getElementById("myAudio");
+            var myImg = document.getElementById("musicimg");
+            if (myAudio.paused) {
+                myAudio.play();
+                myImg.src = "./정은's 웹프/img/playing.gif";
+            } else {
+                myAudio.pause();
+                myImg.src = "./정은's 웹프/img/mute.png";
+            }
+        }
+    </script>
+</head>
+<body class="main">
+    <button onclick="MusicControl()" id="music"><img id="musicimg" width="25" src="./정은's 웹프/img/playing.gif" /> </button>
+
+    <center><div id="title" >M a r v e l</div></center>
+    <br /><br />
+    <div>
+    <a href="./Company.html"><img src="./정은's 웹프/img/헐크.jpg" height="520px" width="295px" alt="헐크 사진" /></a>
+    <a href="./Original.html"><img src="./정은's 웹프/img/캡틴아메리카.png" height="520px" width="295px" alt="캡틴아메리카 사진" /></td></a>
+    <a href="./Character.html"><img src="./정은's 웹프/img/아이언맨.jpg" height="520px" width="297px" alt="아이언맨 사진" /></td></a>
+    <a href="./Moving picture.html"><img src="./정은's 웹프/img/토르.jpg" height="520px" width="295px" alt="토르 사진" /></td></a>
+    <a href="./Comment.html"> <img src="./정은's 웹프/img/블랙위도우.jpg" height="520px" width="298px" alt="블랙위도우 사진" /></td></a>
+    <audio id="myAudio" controls src="./정은's 웹프/배경음악.mp3" hidden autoplay loop></audio>
+</div>
+
+</body>
+</html>

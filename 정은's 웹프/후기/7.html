@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        img {
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+        }
+
+        .menu img {
+            border-radius: 100px;
+        }
+
+            .menu img:hover {
+                cursor: pointer;
+                transform: scale(1.1);
+                transition: transform.25s;
+            }
+
+        section {
+            margin: 0px 30px 0px 250px;
+        }
+
+        #target {
+            color: black;
+            font: italic bold monospace,Sans-sSerif;
+            position: fixed;
+            width: 180px;
+            height: 390px;
+            float: left;
+            border: 3px solid red;
+            background-color: dimgrey;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 30px;
+            overflow-y: auto; /* 스크롤 추가 */
+        }
+
+            #target img {
+                width: 109px;
+                height: 110px;
+            }
+
+                #target img:hover {
+                    cursor: pointer;
+                }
+
+        table {
+            color: white;
+            font-size: 28px;
+            font-family: fantasy;
+            font: bold;
+            border: 2px solid coral;
+            border-color: coral;
+        }
+
+        #series {
+            font-size: 35px;
+            font: bold;
+            font-family: fantasy;
+            color: coral;
+            text-align: center;
+        }
+
+        #page {
+            background-color: black;
+            border: 1px solid cadetblue;
+            font: 22px bold fantasy;
+            width: 150px;
+            height: 45px;
+            text-align: center;
+            color: white;
+            cursor: pointer;
+            margin-right: 30px;
+        }
+    </style>
+    <script>
+        function btn() {
+            alert('서버 점검 중입니다.');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <a href="./../../index_이정은.html"><img height="30" src="./../img/회사 로고.png" /></a>
+        <div class="menu" style="text-align: center;">
+            <a href="./../../Company.html"><img src="./../img/헐크.jpg" height="250" width="200" alt="헐크 사진" /></td></a>&nbsp;&nbsp;
+            <a href="./../../Original.html"><img src="./../img/캡틴아메리카.png" height="250" width="200" alt="캡틴아메리카 사진" /></td></a>&nbsp;&nbsp;&nbsp;
+            <a href="./../../Character.html"><img src="./../img/아이언맨.jpg" height="250" width="200" alt="아이언맨 사진" /></td></a>&nbsp;&nbsp;
+            <a href="./../../Moving picture.html"><img src="./../img/토르.jpg" height="250" width="200" alt="토르 사진" /></td></a>&nbsp;&nbsp;
+            <a href="./../../Comment.html"> <img src="./../img/블랙위도우.jpg" height="250" width="200" alt="블랙위도우 사진" /></td></a>&nbsp;&nbsp;
+        </div>
+    </header>
+    <nav>
+        <br />
+        <div id="target">
+            <span style="font-weight:bold;color:yellow;font-size:20px">GOODS</span><br />
+            <a href="http://storefarm.naver.com/wbox/products/567107688?NaPm=ct%3Djaqsbamo%7Cci%3D940ac9e9f2fd41d1d2a354ac251af185dc9ba9a8%7Ctr%3Dslsl%7Csn%3D418814%7Cic%3D%7Chk%3Dc51ff7d189c7987de60ecec860e73ad20b5f4e02"><img src="./../img/방패.png" /></a><br />
+            <a href="https://ssadajapan.com/mall/view/goodsNo/2133965?NaPm=ct%3Djaqskapc%7Cci%3D5402128b4b83f76a298e204f8feb898e6f57def3%7Ctr%3Dslsl%7Csn%3D310768%7Chk%3Dae3e10a11236d25b1bc14f8f797f2646d421dca5"><img src="./../img/슈트.jpg" /></a><br />
+            <a href="http://storefarm.naver.com/grrs/products/2049721707?NaPm=ct%3Djaqsmheo%7Cci%3D0a5c653470f07e9b68c4368ef77c0646376a2870%7Ctr%3Dslsl%7Csn%3D307110%7Cic%3D%7Chk%3D49a2443b6c93449cada1ae189a9754434cb60362"><img src="./../img/망치.jpg" /></a><br />
+        </div>
+    </nav>
+    <section>
+        <br />
+        <div id="series">토르 다크월드&nbsp;후기</div>
+        <center>
+            <table border="1" width="800" height="400">
+                <tr><th>ID</th><th>내용</th><th>평점</th></tr>
+                <tr><th>&nbsp;&nbsp;aa&nbsp;&nbsp;&nbsp;</th><th>액션이 화려해서 좋았어요.&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;3.4</th>
+                <tr><th>&nbsp;&nbsp;bb&nbsp;&nbsp;&nbsp;</th><th>재밌어요~&nbsp;&nbsp;</th>&nbsp;<th>&nbsp;&nbsp;&nbsp;3.8</th></tr>
+                <tr><th>&nbsp;&nbsp;cc&nbsp;&nbsp;&nbsp;</th><th>기대했던 것보다 별로였어요!&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;1.7</th></tr>
+                <tr><th>&nbsp;&nbsp;dd&nbsp;&nbsp;&nbsp;</th><th>너무 재미있었어요.&nbsp;&nbsp;</th>&nbsp;<th>&nbsp;&nbsp;&nbsp;3.2</th></tr>
+                <tr><th>&nbsp;&nbsp;ee&nbsp;&nbsp;&nbsp;</th><th>기대했는데 기대 이상이었어요~!!&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;4.0</th></tr>
+            </table><br /><br />
+            <input type="button" id="page" value="작성하기" onclick="javascript: btn()">
+            <input type="button" id="page" value="뒤로가기" onclick="location.href='./../../Comment.html'"> 
+        </center>
+    </section><br /><br />
+
+</body>
+</html>
